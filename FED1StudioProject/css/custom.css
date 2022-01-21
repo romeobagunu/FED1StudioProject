@@ -28,6 +28,17 @@ article.classTopic {
     background-color: lightgray;
 }
 
+/*Contact Boxes WIP*/
+div.contactBox {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 24px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1px 1px 1px 1px;
+    border-left: 8px solid black;
+}
+
 /*Temporary Formatting*/
 body {
     background-color: peachpuff;

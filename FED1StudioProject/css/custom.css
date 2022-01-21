@@ -39,6 +39,12 @@ div.contactBox {
     border-left: 8px solid black;
 }
 
+/*Team Aside WIP*/
+aside h1#byDepartment {
+    font-weight: bold;
+    font-size: 24px
+}
+
 /*Temporary Formatting*/
 body {
     background-color: peachpuff;

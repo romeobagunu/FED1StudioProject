@@ -5,39 +5,38 @@ section h3 {
     font-size: 24px;
 }
 
-section h1{
+section h1 {
     font-weight: bold;
     font-size: 48px;
     text-align: center;
 }
 
-article h2.h2Stlye{
+article h2.h2Stlye {
     font-weight: bold;
     font-size: 24px;
 }
 
+header, footer {
+    background-color: white;
+    border: 3px solid black;
+}
 
 /*Temporary Formatting*/
 body {
     background-color: peachpuff;
 }
-header{
-    background-color: white;
-    color: black;
-}
+
 header h1 {
     font-weight: bold;
 }
+
 header p {
     font-style: italic;
 }
+
 main {
     background-color: floralwhite;
     color: black;
-}
-#footer {
-    background-color: lightgray;
-    color: dimgrey;
 }
 
 /*Navbar Styling*/
@@ -45,15 +44,18 @@ nav a {
     font-weight: bold;
     color: white;
 }
-nav a:hover, nav a:active, nav a:focus {
-    text-decoration: none;
-}
+
+    nav a:hover, nav a:active, nav a:focus {
+        text-decoration: none;
+    }
+
 nav ul {
     background-color: black;
     padding: 0;
     border-top: 2px dotted darkgray;
     border-bottom: 2px dotted darkgray;
 }
+
 nav li:hover {
     background-color: darkgray;
 }
@@ -62,7 +64,7 @@ nav ul li {
     display: inline-block;
 }
 
-nav ul li a {
-    padding: .4em 1em;
-    display: block;
-}
+    nav ul li a {
+        padding: .4em 1em;
+        display: block;
+    }

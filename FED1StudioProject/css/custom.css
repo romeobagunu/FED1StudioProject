@@ -2,20 +2,22 @@
 
 /*Header Styling*/
 header, footer {
-    background-color: white;
+    background-color: #FFFFFF;
     border: 3px solid black;
 }
     header h1 {
         font-weight: bold;
+        color: #9E1B32;
     }
     header p {
         font-style: italic;
+        color: #9E1B32;
     }
 
 /*Navbar Styling*/
 nav a {
     font-weight: bold;
-    color: black;
+    color: #72A6CB;
 }
     nav a:hover, nav a:active, nav a:focus {
         text-decoration: none;
@@ -27,7 +29,8 @@ nav ul {
     border-right: 2px solid black;
 }
 nav li:hover {
-    background-color: darkgray;
+    border-radius: 35px;
+    background-color: #828A8F;
 }
 nav ul li {
     display: inline-block;
@@ -39,32 +42,42 @@ nav ul li {
 
 /*Body Styling*/
 body {
-    background-color: white;
+    background-color: #EFEFEF;
 }
-main {
-    background-color: white;
-    color: black;
-}
+
 section h3 {
     font-weight: bold;
     text-decoration: underline;
     font-size: 24px;
+    color: #1A4F71;
 }
 section h1 {
     font-weight: bold;
     font-size: 48px;
     text-align: center;
+    color: #9E1B32;
 }
-article h2.h2Stlye {
+article h2.h2Style {
     font-weight: bold;
     font-size: 24px;
+    color: #1A4F71;
+}
+
+/*index.html Styling*/
+
+p.aboutUs {
+    color: #231F20;
+}
+
+p.whyChooseUs {
+    color: #828A8F;
 }
 
 /*Class Topic Boxes WIP*/
 
 article.classTopic {
     border: 2px solid black;
-    background-color: lightgray;
+    background-color: #E0E0E0;
 }
 
 /*Contact Boxes WIP*/
@@ -75,10 +88,16 @@ div.contactBox {
     border-top: 2px solid black;
     padding: 1px 1px 1px 1px;
     border-left: 8px solid black;
+    background-color: #E0E0E0;
 }
 
 /*Team Aside WIP*/
-aside h1#byDepartment {
+aside h2#byDepartment {
     font-weight: bold;
-    font-size: 24px
+    font-size: 24px;
+    color: #1A4F71;
+}
+aside ul li a {
+    color: #72A6CB;
+    font-weight: bold;
 }

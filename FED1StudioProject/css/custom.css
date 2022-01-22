@@ -1,24 +1,63 @@
-﻿/*WIP Formatting*/
+﻿/*SECTION ONE: SITEWIDE STYLING*/
+
+/*Header Styling*/
+header, footer {
+    background-color: white;
+    border: 3px solid black;
+}
+    header h1 {
+        font-weight: bold;
+    }
+    header p {
+        font-style: italic;
+    }
+
+/*Navbar Styling*/
+nav a {
+    font-weight: bold;
+    color: black;
+}
+    nav a:hover, nav a:active, nav a:focus {
+        text-decoration: none;
+    }
+nav ul {
+    background-color: white;
+    padding: 0;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+nav li:hover {
+    background-color: darkgray;
+}
+nav ul li {
+    display: inline-block;
+}
+    nav ul li a {
+        padding: .4em 1em;
+        display: block;
+    }
+
+/*Body Styling*/
+body {
+    background-color: white;
+}
+main {
+    background-color: white;
+    color: black;
+}
 section h3 {
     font-weight: bold;
     text-decoration: underline;
     font-size: 24px;
 }
-
 section h1 {
     font-weight: bold;
     font-size: 48px;
     text-align: center;
 }
-
 article h2.h2Stlye {
     font-weight: bold;
     font-size: 24px;
-}
-
-header, footer {
-    background-color: white;
-    border: 3px solid black;
 }
 
 /*Class Topic Boxes WIP*/
@@ -34,7 +73,6 @@ div.contactBox {
     margin: 0 auto;
     font-size: 24px;
     border-top: 2px solid black;
-    border-bottom: 2px solid black;
     padding: 1px 1px 1px 1px;
     border-left: 8px solid black;
 }
@@ -44,51 +82,3 @@ aside h1#byDepartment {
     font-weight: bold;
     font-size: 24px
 }
-
-/*Temporary Formatting*/
-body {
-    background-color: peachpuff;
-}
-
-header h1 {
-    font-weight: bold;
-}
-
-header p {
-    font-style: italic;
-}
-
-main {
-    background-color: floralwhite;
-    color: black;
-}
-
-/*Navbar Styling*/
-nav a {
-    font-weight: bold;
-    color: white;
-}
-
-    nav a:hover, nav a:active, nav a:focus {
-        text-decoration: none;
-    }
-
-nav ul {
-    background-color: black;
-    padding: 0;
-    border-top: 2px dotted darkgray;
-    border-bottom: 2px dotted darkgray;
-}
-
-nav li:hover {
-    background-color: darkgray;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-    nav ul li a {
-        padding: .4em 1em;
-        display: block;
-    }

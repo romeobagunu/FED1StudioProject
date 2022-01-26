@@ -11,28 +11,33 @@
 
     <link href="css/custom.css" rel="stylesheet" />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
 </head>
 <body>
 
     <header>
-        <!-- TODO: Add logo. Add three hyperlinked images to Facebook, Twitter, Instagram. -->
-        <h1>Company Name</h1> <!--Placeholder title-->
-        <p>This is the slogan.</p> <!--Placeholder slogan-->
-        <!-- Placeholder logos -->
-        <a href="http://twitter.com/weteachstuff" target="_blank">
-            <img src="images/twitter-logo.jpg" style="width: 80px; height: 80px;" alt="Twitter logo" />
-        </a>
-        <a href="http://facebook.com/learnwithus" target="_blank">
-            <img src="images/facebook-logo.jpg" style="width: 80px;" alt="Facebook logo" />
-        </a>
-
-        <!--
-        The Instagram logo is commented out until an account name can be verified.
-        <a href="http://instagram.com/learnwithus" target="_blank">
-            <img src="images/instagram-logo.jpg" style="width: 80px;" alt="Instagram logo" />
-        </a>
-        -->
-
+        <div id="socialMediaHeader">
+            <div class="socialMediaIcon">
+                <a href="http://twitter.com/weteachstuff" target="_blank" class="socialMediaLink" id="twitter">
+                    <i class="fa fa-twitter-square fa-fw"></i>
+                </a>
+            </div>
+            <div class="socialMediaIcon">
+                <a href="http://facebook.com/learnwithus" target="_blank" class="socialMediaLink" id="facebook">
+                    <i class="fa fa-facebook-square fa-fw"></i>
+                </a>
+            </div>
+            <div class="socialMediaIcon">
+                <a href="http://www.linkedin.com/learnwithus" target="_blank" class="socialMediaLink" id="linkedin">
+                    <i class="fa fa-linkedin-square fa-fw"></i>
+                </a>
+            </div>
+        </div>
+        <div id="brandHeader">
+            <h1>Company Name</h1> <!--Placeholder title-->
+            <p>This is the slogan.</p> <!--Placeholder slogan-->
+        </div>
     </header>
 
     <nav>
@@ -40,7 +45,6 @@
             <li>
                 <a href="index.html">Home</a>
             </li>
-            <!-- TODO: Classes button should have be grey with round edges. -->
             <li>
                 <a href="Classes.html">Classes</a>
             </li>
@@ -60,37 +64,37 @@
             <!-- TODO: Class Topics should be separate cards, 3 columns 2 rows. -->
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 1</h2>
+                <h2>Class Topic 1</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 2</h2>
+                <h2>Class Topic 2</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 3</h2>
+                <h2>Class Topic 3</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 4</h2>
+                <h2>Class Topic 4</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 5</h2>
+                <h2>Class Topic 5</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 6</h2>
+                <h2>Class Topic 6</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
             <article class="classTopic">
                 <img src="images/placeholder.jpg" style="width: 235px; height: 180px;" />
-                <h2 class="h2Style">Class Topic 1</h2>
+                <h2>Class Topic 1</h2>
                 <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </article>
         </section>
@@ -103,26 +107,31 @@
 
     </main>
 
-    <footer id="footer">
-
-        <!-- TODO: Add hyperlinked Facebook, Twitter, and Instagram images to the footer. -->
-        &copy;All Rights Reserved 2022
-
-        <!-- Placeholder logos -->
-        <a href="http://twitter.com/weteachstuff" target="_blank">
-            <img src="images/twitter-logo.jpg" style="width: 80px; height: 80px;" alt="Twitter logo" />
-        </a>
-        <a href="http://facebook.com/learnwithus" target="_blank">
-            <img src="images/facebook-logo.jpg" style="width: 80px;" alt="Facebook logo" />
-        </a>
-
-        <!--
-        The Instagram logo is commented out until an account name can be verified.
-        <a href="http://instagram.com/learnwithus" target="_blank">
-            <img src="images/instagram-logo.jpg" style="width: 80px;" alt="Instagram logo" />
-        </a>
-        -->
-
+    <footer>
+        <div>
+            <div id="copyright">
+                <p>
+                    &copy;All Rights Reserved 2022
+                </p>
+            </div>
+            <div id="socialMediaFooter">
+                <div class="socialMediaIcon">
+                    <a href="http://twitter.com/weteachstuff" target="_blank" class="socialMediaLink" id="twitterFooter">
+                        <i class="fa fa-twitter-square fa-fw"></i>
+                    </a>
+                </div>
+                <div class="socialMediaIcon">
+                    <a href="http://facebook.com/learnwithus" target="_blank" class="socialMediaLink" id="facebookFooter">
+                        <i class="fa fa-facebook-square fa-fw"></i>
+                    </a>
+                </div>
+                <div class="socialMediaIcon">
+                    <a href="http://www.linkedin.com/learnwithus" target="_blank" class="socialMediaLink" id="linkedinFooter">
+                        <i class="fa fa-linkedin-square fa-fw"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

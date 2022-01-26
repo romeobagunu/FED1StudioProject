@@ -11,28 +11,33 @@
 
     <link href="css/custom.css" rel="stylesheet" />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
 </head>
 <body>
 
     <header>
-        <!-- TODO: Add logo. Add three hyperlinked images to Facebook, Twitter, Instagram. -->
-        <h1>Company Name</h1> <!--Placeholder title-->
-        <p>This is the slogan.</p> <!--Placeholder slogan-->
-        <!-- Placeholder logos -->
-        <a href="http://twitter.com/weteachstuff" target="_blank">
-            <img src="images/twitter-logo.jpg" style="width: 80px; height: 80px;" alt="Twitter logo" />
-        </a>
-        <a href="http://facebook.com/learnwithus" target="_blank">
-            <img src="images/facebook-logo.jpg" style="width: 80px;" alt="Facebook logo" />
-        </a>
-
-        <!--
-    The Instagram logo is commented out until an account name can be verified.
-    <a href="http://instagram.com/learnwithus" target="_blank">
-        <img src="images/instagram-logo.jpg" style="width: 80px;" alt="Instagram logo" />
-    </a>
-    -->
-
+        <div id="socialMediaHeader">
+            <div class="socialMediaIcon">
+                <a href="http://twitter.com/weteachstuff" target="_blank" class="socialMediaLink" id="twitter">
+                    <i class="fa fa-twitter-square fa-fw"></i>
+                </a>
+            </div>
+            <div class="socialMediaIcon">
+                <a href="http://facebook.com/learnwithus" target="_blank" class="socialMediaLink" id="facebook">
+                    <i class="fa fa-facebook-square fa-fw"></i>
+                </a>
+            </div>
+            <div class="socialMediaIcon">
+                <a href="http://www.linkedin.com/learnwithus" target="_blank" class="socialMediaLink" id="linkedin">
+                    <i class="fa fa-linkedin-square fa-fw"></i>
+                </a>
+            </div>
+        </div>
+        <div id="brandHeader">
+            <h1>Company Name</h1> <!--Placeholder title-->
+            <p>This is the slogan.</p> <!--Placeholder slogan-->
+        </div>
     </header>
 
     <nav>
@@ -58,7 +63,7 @@
 
             <!-- TODO: Add image to the left of the About Us article. -->
 
-            <img src="images/placeholder.jpg" width="275" height="290" alt="About Us Placeholder"; />
+            <img src="images/placeholder.jpg" width="275" height="290" alt="About Us Placeholder" ; />
             <h3>About Us</h3>
             <p class="aboutUs">
                 Lorem ipsumdolor sit amet, consectetur adipiscingelit. Nunc maximus, nuIla ut commodo sagittis, sapien dui matti s du i, non pulvinar loremfelis nee erat Loremipsumdolor sit amet, consectetur adipiscingelit. Nuncmaximus, null aut commodo sagitt is, sapiendui mattisdui, non pulvinar lorem felis nee erat.Aliquam egestas, velit at condimentumplacerat, sem sapien laoreet mauris, dictumporttitor lacusestnee enim. Vivamus feugiat elit lorem,eu porttitor anteultricesid.Phasellus suscipit tellusante, nee dignissim elit imperdiet nee. Nullam fringilla
@@ -92,26 +97,31 @@
 
     </main>
 
-    <footer id="footer">
-
-        <!-- TODO: Add hyperlinked Facebook, Twitter, and Instagram images to the footer. -->
-        &copy;All Rights Reserved 2022
-
-        <!-- Placeholder logos -->
-                <a href="http://twitter.com/weteachstuff" target="_blank">
-                    <img src="images/twitter-logo.jpg" style="width: 80px; height: 80px;" alt="Twitter logo" />
-                </a>
-                <a href="http://facebook.com/learnwithus" target="_blank">
-                    <img src="images/facebook-logo.jpg" style="width: 80px;" alt="Facebook logo" />
-                </a>
-
-            <!--
-        The Instagram logo is commented out until an account name can be verified.
-        <a href="http://instagram.com/learnwithus" target="_blank">
-            <img src="images/instagram-logo.jpg" style="width: 80px;" alt="Instagram logo" />
-        </a>
-        -->
-
+    <footer>
+        <div>
+            <div id="copyright">
+                <p>
+                    &copy;All Rights Reserved 2022
+                </p>
+            </div>
+            <div id="socialMediaFooter">
+                <div class="socialMediaIcon">
+                    <a href="http://twitter.com/weteachstuff" target="_blank" class="socialMediaLink" id="twitterFooter">
+                        <i class="fa fa-twitter-square fa-fw"></i>
+                    </a>
+                </div>
+                <div class="socialMediaIcon">
+                    <a href="http://facebook.com/learnwithus" target="_blank" class="socialMediaLink" id="facebookFooter">
+                        <i class="fa fa-facebook-square fa-fw"></i>
+                    </a>
+                </div>
+                <div class="socialMediaIcon">
+                    <a href="http://www.linkedin.com/learnwithus" target="_blank" class="socialMediaLink" id="linkedinFooter">
+                        <i class="fa fa-linkedin-square fa-fw"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

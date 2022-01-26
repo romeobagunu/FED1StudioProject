@@ -1,76 +1,237 @@
 ﻿/*SECTION ONE: SITEWIDE STYLING*/
 
+/*Font Import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap');
+
 /*Header Styling*/
-header, footer {
+
+body header {
+    margin-top: 20px;
     background-color: #FFFFFF;
-    border: 3px solid black;
+    min-height: 50%;
+    clear: both;
+    display: block;
+    overflow: auto;
+    height: auto;
 }
-    header h1 {
-        font-weight: bold;
-        color: #9E1B32;
+
+header a.socialMediaLink {
+    font-size: 2.25em;
+    text-decoration: none;
+}
+
+header #twitter {
+    color: #1da1f2;
+}
+
+header #linkedin {
+    color: #0a66c2;
+}
+
+header #facebook {
+    color: #1877f2;
+}
+
+header div#brandHeader {
+    width: 73%;
+    display: inline;
+    height: 10%;
+}
+
+    header div#brandHeader p, header div#brandHeader h1 {
+        width: inherit;
+        margin: 0;
     }
-    header p {
-        font-style: italic;
-        color: #9E1B32;
+
+header div#socialMediaHeader {
+    width: 25%;
+    height: 100%;
+    display: inline;
+    float: right;
+    margin: 0;
+    clear: both;
+}
+
+    header div#socialMediaHeader div.socialMediaIcon {
+        display: inline-block;
+        margin-left: 0.10em;
+        float: right;
+        font-size: 0.9em;
+        width: 25%;
+        height: 25%;
     }
+
+
+header div#brandHeader h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #9E1B32;
+    margin: 0;
+    text-shadow: 1px 1px #828A8F;
+    height: 63%;
+    display: block;
+}
+
+header div#brandHeader p {
+    font-family: 'Lato', serif;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #9E1B32;
+    margin: 0;
+    height: 33%;
+    display: block;
+}
 
 /*Navbar Styling*/
 nav a {
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
     color: #72A6CB;
+    font-size: 1em;
 }
+
     nav a:hover, nav a:active, nav a:focus {
         text-decoration: none;
     }
+
 nav ul {
     background-color: white;
     padding: 0;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    margin: 0px;
 }
+
 nav li:hover {
     border-radius: 35px;
     background-color: #828A8F;
 }
+
 nav ul li {
     display: inline-block;
+    width: 10em;
 }
+
     nav ul li a {
-        padding: .4em 1em;
+        padding: 15px;
         display: block;
+        text-align: center;
     }
 
 /*Body Styling*/
+
 body {
-    background-color: #EFEFEF;
+    font-size: 100%;
 }
 
 section h3 {
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-decoration: underline;
-    font-size: 24px;
+    font-size: 1.875em;
     color: #1A4F71;
 }
+
 section h1 {
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 2.5em;
     text-align: center;
     color: #9E1B32;
 }
+
 article h2.h2Style {
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.75em;
     color: #1A4F71;
 }
+
+/*Footer Styling*/
+
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 2px solid #E0E0E0;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+    footer div {
+        height: 32px;
+    }
+
+        footer div div#socialMediaFooter {
+            float: right;
+            width: 25%;
+            font-size: 1em;
+        }
+
+        footer div.socialMediaIcon {
+            display: inline;
+            float: right;
+            height: 100%;
+            width: 33%;
+            font-size: 2em;
+            clear: none;
+            margin: 0.01em;
+        }
+
+        footer div div#socialMediaFooter a.socialMediaLink {
+            font-size: 0.9em;
+            text-decoration: none;
+        }
+
+    footer #twitterFooter, footer #linkedinFooter, footer #facebookFooter {
+        color: #828A8F;
+    }
+
+    footer div div#copyright {
+        display: inline;
+        width: 73%;
+        clear: none;
+        height: 32px;
+    }
+
+        footer div div#copyright p {
+            width: inherit;
+            display: inline;
+            font-family: 'Open Sans', sans-serif;
+            color: #828A8F;
+            font-size: 1em;
+            vertical-align: middle;
+            margin: 0;
+            height: auto;
+        }
 
 /*index.html Styling*/
 
 p.aboutUs {
+    font-family: 'Open Sans', sans-serif;
     color: #231F20;
+    font-size: 1.15em;
 }
 
 p.whyChooseUs {
+    font-family: 'Open Sans', sans-serif;
     color: #828A8F;
+    font-size: 1.25em;
+}
+
+/*Classes.html Styling*/
+
+article.classTopic p {
+    font-family: 'Open Sans', sans-serif;
+    color: #231F20;
+    font-size: 1.15em;
+}
+
+article.classTopic h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #1A4F71;
 }
 
 /*Class Topic Boxes WIP*/
@@ -80,24 +241,50 @@ article.classTopic {
     background-color: #E0E0E0;
 }
 
+/*Team.html Styling*/
+
+article.teamBio p {
+    font-family: 'Open Sans', sans-serif;
+    color: #231F20;
+    font-size: 1.15em;
+}
+
+/*Team Aside WIP*/
+aside h2#byDepartment {
+    font-family: 'Lato', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #1A4F71;
+    margin: 4px;
+}
+
+aside ul {
+    margin: 4px;
+}
+
+    aside ul li {
+        margin: 8px;
+    }
+
+        aside ul li a {
+            font-family: 'Lato', serif;
+            color: #72A6CB;
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+
 /*Contact Boxes WIP*/
 div.contactBox {
     width: 400px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 1.3em;
     border-top: 2px solid black;
     padding: 1px 1px 1px 1px;
     border-left: 8px solid black;
     background-color: #E0E0E0;
 }
 
-/*Team Aside WIP*/
-aside h2#byDepartment {
-    font-weight: bold;
-    font-size: 24px;
-    color: #1A4F71;
-}
-aside ul li a {
-    color: #72A6CB;
-    font-weight: bold;
-}
+    div.contactBox p {
+        font-family: 'Open Sans', sans-serif;
+        color: #231F20;
+    }

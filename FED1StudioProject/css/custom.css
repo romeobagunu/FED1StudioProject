@@ -122,13 +122,14 @@ nav ul {
 
         nav ul li a {
             display: block;
+            padding: 0.3em;
+            height: 100%;
+            box-sizing: border-box;
             text-align: center;
             text-decoration: none;
             font-family: 'Cardo', serif;
             color: #BBBBBB;
             font-size: 1.25em;
-            padding: 0.3em;
-            height: 100%;
         }
 
             nav ul li a:hover {
@@ -141,14 +142,34 @@ nav ul {
 
 /*Main Styling*/
 
+main {
+    overflow: hidden;
+    padding: 1em;
+}
+
 body {
     font-size: 100%;
     margin: 3em;
-    background-image: linear-gradient(rgba(16, 20, 26, 0.8), rgba(16, 20, 26, 0.8)), url(/images/pexels-cottonbro-3826435.jpg);
+    background-image: linear-gradient(rgba(16, 20, 26, 0.7), rgba(16, 20, 26, 0.7)), url(/images/pexels-cottonbro-3826435.jpg);
     background-size: cover;
 }
 
-section h3 {
+main h1 {
+    font-family: 'Cardo', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    color: #9E1B32;
+}
+
+main h3 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-decoration: underline;
@@ -156,38 +177,25 @@ section h3 {
     color: #9E1B32;
 }
 
-section h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-    text-align: center;
-    color: #9E1B32;
-}
-
-article h2.h2Style {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 1.75em;
-    color: #9E1B32;
-}
-
 /*Footer Styling*/
 
 
 footer {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 20px;
+    border-top: 0.01em solid #555555;
+    padding: 1em 1em 0.5em 1em;
+    clear: both;
+    overflow: hidden;
 }
 
     footer div {
-        height: 32px;
+        height: 100%;
     }
 
         footer div div#socialMediaFooter {
             float: right;
             width: 25%;
             font-size: 1em;
+            height: 100%;
         }
 
         footer div.socialMediaIcon {
@@ -211,101 +219,238 @@ footer {
 
     footer div div#copyright {
         display: inline;
+        float: left;
         width: 73%;
-        clear: none;
-        height: 32px;
     }
 
         footer div div#copyright p {
-            width: inherit;
-            display: inline;
             font-family: 'Open Sans', sans-serif;
             color: #828A8F;
             font-size: 1em;
-            vertical-align: middle;
-            margin: 0;
-            height: auto;
+            width: 100%;
+            display: inline-block;
         }
 
 /*index.html Styling*/
 
-p.aboutUs {
-    font-family: 'Open Sans', sans-serif;
-    color: #828A8F;
-    font-size: 1.15em;
+section#aboutUs {
+    overflow: hidden;
 }
 
-p.whyChooseUs {
-    font-family: 'Open Sans', sans-serif;
-    color: #828A8F;
-    font-size: 1.25em;
+    section#aboutUs div#aboutUsImage {
+        width: 33%;
+        float: left;
+        height: 100%;
+        padding: 2em;
+        box-sizing: border-box;
+    }
+
+        section#aboutUs div#aboutUsImage img {
+            height: 100%;
+            width: 100%;
+        }
+
+div#aboutUsText {
+    width: 66%;
+    float: right;
+    box-sizing: border-box;
+    padding: 2em;
 }
+
+    div#aboutUsText p {
+        font-family: 'Open Sans', sans-serif;
+        color: #828A8F;
+        font-size: 1em;
+    }
+
+section#whyChooseUs {
+    clear: both;
+}
+
+    section#whyChooseUs article {
+        clear: both;
+        overflow: hidden;
+    }
+
+        section#whyChooseUs article div#whyChooseUsImg1 {
+            width: 49%;
+            float: left;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+            section#whyChooseUs article div#whyChooseUsImg1 img {
+                height: 100%;
+                width: 100%;
+            }
+
+        section#whyChooseUs article div#whyChooseUsTxt1 {
+            width: 49%;
+            float: right;
+            box-sizing: border-box;
+            padding: 2em;
+        }
+
+        section#whyChooseUs article div#whyChooseUsImg2 {
+            width: 49%;
+            float: right;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+            section#whyChooseUs article div#whyChooseUsImg2 img {
+                height: 100%;
+                width: 100%;
+            }
+
+        section#whyChooseUs article div#whyChooseUsTxt2 {
+            width: 49%;
+            float: left;
+            box-sizing: border-box;
+            padding: 2em;
+        }
+
+        section#whyChooseUs article div p {
+            font-family: 'Open Sans', sans-serif;
+            color: #828A8F;
+            font-size: 1.25em;
+        }
 
 /*Classes.html Styling*/
 
-article.classTopic p {
-    font-family: 'Open Sans', sans-serif;
-    color: #231F20;
-    font-size: 1.15em;
+section#classSubjects {
+    margin: 0 auto;
+    text-align: center;
 }
-
-article.classTopic h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    color: #1A4F71;
-}
-
-/*Class Topic Boxes WIP*/
 
 article.classTopic {
-    border: 2px solid black;
-    background-color: #E0E0E0;
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    background-color: rgba(52, 70, 81, 0.8);
 }
 
+    article.classTopic:hover {
+        border: 1px solid #9E1B32;
+    }
+
+    article.classTopic img {
+        height: 100%;
+        width: 100%;
+    }
+
+    article.classTopic h2 {
+        font-family: 'Cardo', serif;
+        font-size: 1.5em;
+        color: #FFFFFF;
+        font-weight: normal;
+    }
+
+    article.classTopic p {
+        font-family: 'Open Sans', sans-serif;
+        color: #DDDDDD;
+        font-size: 1.15em;
+    }
+
+
 /*Team.html Styling*/
+
+section.departmentSection {
+    float: left;
+    overflow: hidden;
+    width: 75%;
+}
+
+section.departmentSection h1 {
+    clear: both;
+}
+
+article.teamBio {
+    clear: both;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 2em;
+    padding: 1em;
+}
 
 article.teamBio p {
     font-family: 'Open Sans', sans-serif;
     color: #828A8F;
     font-size: 1.15em;
+    padding: 1em;
+    float: right;
+    display: inline-block;
+    width: 65%;
+    height: 100%;
 }
 
-/*Team Aside WIP*/
+article.teamBio img {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+aside {
+    float: right;
+    overflow: hidden;
+    width: 24%;
+    background-color: rgba(52, 70, 81, 0.5);
+    border-radius: 1em;
+    padding: 1.5em;
+    box-sizing: border-box;
+    height: 100%;
+}
+
 aside h2#byDepartment {
-    font-family: 'Lato', serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #1A4F71;
-    margin: 4px;
+    font-family: 'Cardo', serif;
+    font-weight: normal;
+    font-size: 1.25em;
+    color: #DDDDDD;
+    margin: 0;
 }
 
 aside ul {
-    margin: 4px;
+    margin: 0;
+    height: 100%;
 }
 
     aside ul li {
-        margin: 8px;
+        margin: 0.25em;
+        color: #999999;
     }
 
         aside ul li a {
-            font-family: 'Lato', serif;
-            color: #72A6CB;
-            font-weight: bold;
-            font-size: 1.25em;
+            font-family: 'Cardo', serif;
+            color: #AAAAAA;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+
+        aside ul li a:hover {
+            color: #FFFFFF;
         }
 
 /*Contact Boxes WIP*/
 div.contactBox {
-    width: 400px;
+    width: 40%;
     margin: 0 auto;
     font-size: 1.3em;
     border-top: 2px solid black;
-    padding: 1px 1px 1px 1px;
+    padding: 0.5em;
     border-left: 8px solid black;
-    background-color: #E0E0E0;
+    background-color: rgba(52, 70, 81, 0.5);
 }
 
     div.contactBox p {
         font-family: 'Open Sans', sans-serif;
-        color: #231F20;
+        color: #DDDDDD;
+        margin: 0;
+    }
+
+    div.contactBox p a {
+        color: #1877f2;
+        font-style: italic;
     }

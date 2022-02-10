@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Contact.html" />
     <Content Include="css\custom.css" />
+    <Content Include="favicon.ico" />
     <Content Include="images\logo-yellowbg.png" />
     <Content Include="images\pexels-cottonbro-3826435.jpg" />
     <Content Include="images\placeholder.JPG" />

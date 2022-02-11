@@ -73,6 +73,12 @@
     <Content Include="images\logo-yellowbg.png" />
     <Content Include="images\pexels-cottonbro-3826435.jpg" />
     <Content Include="images\placeholder.JPG" />
+    <Content Include="images\uxwing-communication.png" />
+    <Content Include="images\uxwing-economy.png" />
+    <Content Include="images\uxwing-gears3.png" />
+    <Content Include="images\uxwing-intro2.png" />
+    <Content Include="images\uxwing-rapiers.png" />
+    <Content Include="images\uxwing-strategy3.png" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />
     <Content Include="index.html" />

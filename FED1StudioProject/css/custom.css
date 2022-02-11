@@ -440,7 +440,7 @@ footer {
     #classTables table {
         background-color: rgba(74, 94, 101, 0.35);
         margin: auto;
-        width: 50%;
+        width: 60%;
         border: 0;
         border-collapse: collapse;
     }
@@ -463,12 +463,16 @@ footer {
                     font-size: 1.75em;
                 }
 
-        #classTables table tbody tr td {
-            color: #DDDDDD;
-            font-family: 'Open Sans', sans-serif;
-            border: 1px solid rgb(52, 70, 81);
-            border-collapse: collapse;
+        #classTables table tbody tr {
+            min-height: 100px;
         }
+
+            #classTables table tbody tr td {
+                color: #DDDDDD;
+                font-family: 'Open Sans', sans-serif;
+                border: 1px solid rgb(52, 70, 81);
+                border-collapse: collapse;
+            }
 
         #classTables table tfoot {
             background-color: rgba(52, 70, 81, 0.8);
@@ -520,25 +524,36 @@ footer {
     clear: both;
     overflow: hidden;
     box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 2em;
 }
 
-.teamBio p {
-    font-family: 'Open Sans', sans-serif;
-    color: #828A8F;
-    font-size: 1.15em;
-    padding: 1em;
-    margin: auto;
-}
+    .teamBio p {
+        font-family: 'Open Sans', sans-serif;
+        color: #828A8F;
+        font-size: 1.15em;
+        padding: 1em;
+        width: 66%;
+        display: inline-block;
+        margin: 0;
+    }
 
-.teamBio img {
-    float: left;
-    display: block;
-    height: 150px;
-    width: 150px;
-    filter: grayscale(100%);
-    object-fit: cover;
-    border-radius: 50%;
-}
+    .teamBio h3 {
+        padding: .6em;
+        width: 66%;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .teamBio img {
+        float: left;
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+        filter: grayscale(100%);
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
 aside {
     float: right;

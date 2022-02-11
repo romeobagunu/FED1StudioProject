@@ -371,7 +371,9 @@ footer {
     font-size: 1.25em;
 }
 
-/*Classes.html Styling*/
+/*****************************************
+            Classes.html Styling
+*****************************************/
 
 #classSubjects {
     margin: 0 auto;
@@ -463,8 +465,8 @@ footer {
                     font-size: 1.75em;
                 }
 
-        #classTables table tbody tr {
-            min-height: 100px;
+        #classTables table tbody tr:nth-child(even) {
+            background-color: rgba(52, 70, 81, 0.4);
         }
 
             #classTables table tbody tr td {

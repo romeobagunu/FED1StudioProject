@@ -7,47 +7,44 @@
 /*Header Styling*/
 
 header {
-    margin: 0;
-    height: 5em;
+    padding: 1em 1em;
     clear: both;
-    padding: 1em 1em 0.5em 1em;
+    overflow: hidden;
 }
 
     header div#brandHeader {
         width: 73%;
         height: 100%;
         float: left;
+        overflow: hidden;
     }
 
         header div#brandHeader div#logo {
             height: 100%;
-            width: 5em;
-            background-color: white;
+            width: 6em;
             float: left;
             display: inline-block;
         }
 
             header div#brandHeader div#logo img {
-                height: 100%;
-                width: 5em;
+                height: 6em;
+                width: 6em;
                 float: left;
             }
 
         header div#brandHeader div#brandingText {
-            width: 60%;
             height: 100%;
-            float: left;
-            margin-left: 1em;
+            margin: 0 0 0 1em;
             display: inline-block;
         }
 
             header div#brandHeader div#brandingText h1 {
                 font-family: 'Cardo', serif;
-                font-size: 3.1em;
+                font-size: 3em;
                 color: white;
                 margin: 0;
                 height: 63%;
-                width: 80%;
+                width: 100%;
                 font-weight: normal;
             }
 
@@ -58,7 +55,7 @@ header {
                 color: white;
                 height: 33%;
                 margin: 0;
-                width: 80%;
+                width: 100%;
             }
 
     header div#socialMediaHeader {
@@ -80,49 +77,53 @@ header {
                 font-size: 2em;
                 text-decoration: none;
                 width: 100%;
+                overflow: hidden;
             }
 
 #twitter {
     color: #1da1f2;
 }
 
-#twitter:hover {
-    color: #FFFFFF;
-}
+    #twitter:hover {
+        color: #FFFFFF;
+    }
 
 #linkedin {
     color: #0a66c2;
 }
 
-#linkedin:hover {
-    color: #FFFFFF;
-}
+    #linkedin:hover {
+        color: #FFFFFF;
+    }
 
 #facebook {
     color: #1877f2;
 }
 
-#facebook:hover {
-    color: #FFFFFF;
-}
+    #facebook:hover {
+        color: #FFFFFF;
+    }
 
 
 /*Navbar Styling*/
 
+
+
 nav ul {
-    padding: 0;
+    padding: 1em 1em;
     height: 2.5em;
     width: 100%;
-    margin: 1em 0 1em 0;
 }
 
     nav ul li {
         display: inline-block;
         border-radius: 35px;
-        width: 8em;
+        width: 20%;
+        max-width: 12em;
         height: 100%;
-        margin: 0em 1em 0em 1em;
+        margin: 0 1em 0 0;
         background-image: linear-gradient(rgba(74, 94, 101, 0.35), rgba(74, 94, 101, 0.35));
+        overflow: hidden;
     }
 
         nav ul li:hover {
@@ -160,8 +161,8 @@ nav ul {
 /*Main Styling*/
 
 main {
-    overflow: hidden;
     padding: 1em;
+    overflow: hidden;
 }
 
 body {
@@ -230,9 +231,9 @@ footer {
             text-decoration: none;
         }
 
-        footer div div#socialMediaFooter a.socialMediaLink:hover {
-            color: #FFFFFF;
-        }
+            footer div div#socialMediaFooter a.socialMediaLink:hover {
+                color: #FFFFFF;
+            }
 
     footer #twitterFooter, footer #linkedinFooter, footer #facebookFooter {
         color: #828A8F;
@@ -259,85 +260,91 @@ section#aboutUs {
     width: 100%;
 }
 
-    section#aboutUs div#aboutUsImage {
-        width: 33%;
-        height: 100%;
-        float: left;
-        padding: 2em;
-        box-sizing: border-box;
-    }
-
-        section#aboutUs div#aboutUsImage img {
-            height: 20em;
-            width: 20em;
-            object-fit: cover;
-            border-radius: 35%;
-            float: right;
-        }
-
-    section#aboutUs div#aboutUsText {
-        width: 66%;
-        float: right;
-        box-sizing: border-box;
-        padding: 2em;
-    }
-
-div#aboutUsText p {
-    font-family: 'Open Sans', sans-serif;
-    color: #828A8F;
-    font-size: 1em;
-    padding: 0 5em 0 0;
+#aboutUsImage {
+    padding: 1em;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin: auto 0;
+    box-sizing: border-box;
 }
 
-section#whyChooseUs {
+    #aboutUsImage img {
+        height: 100%;
+        min-height: 212px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 35%;
+    }
+
+#aboutUsText {
+    width: 69%;
+    float: right;
+    padding: 1em;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+    #aboutUsText p {
+        font-family: 'Open Sans', sans-serif;
+        color: #828A8F;
+        font-size: 1.2em;
+    }
+
+    div#aboutUsText h3 {
+        margin: 0;
+    }
+
+#whyChooseUs {
     clear: both;
 }
 
-    section#whyChooseUs article {
+    #whyChooseUs article {
         clear: both;
         overflow: hidden;
         height: 100%;
     }
 
-        section#whyChooseUs article div#whyChooseUsImg1 {
+        #whyChooseUsImg1 {
             width: 49%;
             float: left;
             padding: 2em;
             box-sizing: border-box;
         }
 
-            section#whyChooseUs article div#whyChooseUsImg1 img {
+            #whyChooseUsImg1 img {
                 height: 100%;
                 width: 100%;
             }
 
-        section#whyChooseUs article div#whyChooseUsTxt1 {
+        #whyChooseUsTxt1 {
             width: 49%;
             float: right;
             box-sizing: border-box;
             padding: 2em;
         }
 
-        section#whyChooseUs article div#whyChooseUsImg2 {
+        #whyChooseUsImg2 {
             width: 49%;
             float: right;
             padding: 2em;
             box-sizing: border-box;
         }
 
-            section#whyChooseUs article div#whyChooseUsImg2 img {
+            #whyChooseUsImg2 img {
                 height: 100%;
                 width: 100%
             }
 
-        section#whyChooseUs article div#whyChooseUsTxt2 {
+        #whyChooseUsTxt2 {
             width: 49%;
             float: left;
             box-sizing: border-box;
             padding: 2em;
         }
 
-        section#whyChooseUs article div p {
+        #whyChooseUs p {
             font-family: 'Open Sans', sans-serif;
             color: #828A8F;
             font-size: 1.25em;
@@ -345,15 +352,14 @@ section#whyChooseUs {
 
 /*Classes.html Styling*/
 
-section#classSubjects {
+#classSubjects {
     margin: 0 auto;
     text-align: center;
 }
 
-article.classTopic {
-    width: 25%;
+.classTopic {
+    width: 20%;
     display: inline-block;
-    box-sizing: border-box;
     margin: 1em;
     padding: 1em;
     text-align: left;
@@ -361,16 +367,16 @@ article.classTopic {
     border-radius: 3%;
 }
 
-    article.classTopic:hover {
+    .classTopic:hover {
         border: 1px solid #FFFFFF;
     }
 
-    article.classTopic img {
+    .classTopic img {
         height: 100%;
         width: 100%;
     }
 
-    article.classTopic a {
+    .classTopic a {
         font-family: 'Lato', sans-serif;
         font-size: 1.5em;
         color: #BBBBBB;
@@ -379,11 +385,11 @@ article.classTopic {
         display: block;
     }
 
-        article.classTopic a:hover {
+        .classTopic a:hover {
             color: #FFFFFF;
         }
 
-    article.classTopic p {
+    .classTopic p {
         font-family: 'Open Sans', sans-serif;
         color: #DDDDDD;
         font-size: 1em;
@@ -391,62 +397,62 @@ article.classTopic {
     }
 
 
-section#classTables {
+#classTables {
     margin: 2em auto;
     text-align: center;
 }
 
-    section#classTables h1 {
+    #classTables h1 {
         font-size: 2em;
     }
 
-    section#classTables table {
+    #classTables table {
         background-color: rgba(74, 94, 101, 0.35);
         margin: auto;
-        width: 66%;
+        width: 50%;
         border: 0;
         border-collapse: collapse;
     }
 
-        section#classTables table thead {
+        #classTables table thead {
             background-color: rgba(52, 70, 81, 0.8);
         }
 
-            section#classTables table thead tr {
+            #classTables table thead tr {
                 color: #FFFFFF;
                 font-family: 'Lato', sans-serif;
                 font-weight: bold;
                 font-size: 1em;
             }
 
-                section#classTables table thead tr th.tableTitle {
+                #classTables table thead tr th.tableTitle {
                     color: #FFFFFF;
                     font-family: 'Lato', serif;
                     font-weight: normal;
                     font-size: 1.75em;
                 }
 
-        section#classTables table tbody tr td {
+        #classTables table tbody tr td {
             color: #DDDDDD;
             font-family: 'Open Sans', sans-serif;
             border: 1px solid rgb(52, 70, 81);
             border-collapse: collapse;
         }
 
-        section#classTables table tfoot {
+        #classTables table tfoot {
             background-color: rgba(52, 70, 81, 0.8);
             padding: 0.01em;
             height: 1.27em;
         }
 
-            section#classTables table tfoot tr td img {
+            #classTables table tfoot tr td img {
                 display: inline;
                 float: left;
                 height: 1.25em;
                 width: 1.25em;
             }
 
-            section#classTables table tfoot tr td h3 {
+            #classTables table tfoot tr td h3 {
                 display: inline;
                 float: left;
                 font-family: 'Cardo', serif;
@@ -457,7 +463,7 @@ section#classTables {
                 text-decoration: none;
             }
 
-            section#classTables table tfoot tr td p {
+            #classTables table tfoot tr td p {
                 display: inline;
                 float: left;
                 font-family: 'Cardo', serif;
@@ -469,17 +475,17 @@ section#classTables {
 
 /*Team.html Styling*/
 
-section.departmentSection {
+.departmentSection {
     float: left;
     overflow: hidden;
     width: 75%;
 }
 
-    section.departmentSection h1 {
+    .departmentSection h1 {
         clear: both;
     }
 
-article.teamBio {
+.teamBio {
     clear: both;
     overflow: hidden;
     box-sizing: border-box;
@@ -487,7 +493,7 @@ article.teamBio {
     padding: 1em;
 }
 
-    article.teamBio p {
+    .teamBio p {
         font-family: 'Open Sans', sans-serif;
         color: #828A8F;
         font-size: 1.15em;
@@ -498,7 +504,7 @@ article.teamBio {
         height: 100%;
     }
 
-    article.teamBio img {
+    .teamBio img {
         float: left;
         height: 12em;
         width: 12em;
@@ -511,14 +517,16 @@ aside {
     float: right;
     overflow: hidden;
     width: 24%;
+}
+
+#sidenav {
     background-color: rgba(52, 70, 81, 0.5);
     border-radius: 1em;
     padding: 1.5em;
     box-sizing: border-box;
-    height: 100%;
 }
 
-    aside h2#byDepartment {
+    #sidenav h2 {
         font-family: 'Cardo', serif;
         font-weight: normal;
         font-size: 1.25em;
@@ -526,45 +534,48 @@ aside {
         margin: 0;
     }
 
-    aside ul {
+    #sidenav ul {
         margin: 0;
         height: 100%;
     }
 
-        aside ul li {
+        #sidenav ul li {
             margin: 0.25em;
             color: #999999;
         }
 
-            aside ul li a {
+            #sidenav ul li a {
                 font-family: 'Cardo', serif;
                 color: #AAAAAA;
                 font-weight: normal;
                 font-size: 1.2em;
             }
 
-                aside ul li a:hover {
+                #sidenav ul li a:hover {
                     color: #FFFFFF;
                 }
 
-/*Contact Boxes WIP*/
-div.contactBox {
+
+.contactBox {
     width: 40%;
     margin: 0 auto;
     font-size: 1.3em;
-    border-top: 2px solid black;
     padding: 0.5em;
-    border-left: 8px solid black;
-    background-color: rgba(52, 70, 81, 0.5);
+    background-color: rgba(52, 70, 81, 0.65);
+    border-radius: 3%;
 }
 
-    div.contactBox p {
+    .contactBox p {
         font-family: 'Cardo', serif;
         color: #DDDDDD;
         margin: 0;
     }
 
-        div.contactBox p a {
+        .contactBox p a {
             color: #1877f2;
             font-style: italic;
+        }
+
+        #contact {
+            margin: 0 auto .5em auto;
         }

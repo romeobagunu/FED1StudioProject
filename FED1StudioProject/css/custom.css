@@ -256,6 +256,7 @@ footer {
 
 section#aboutUs {
     overflow: hidden;
+    width: 100%;
 }
 
     section#aboutUs div#aboutUsImage {
@@ -267,10 +268,11 @@ section#aboutUs {
     }
 
         section#aboutUs div#aboutUsImage img {
-            height: 17em;
-            width: 17em;
+            height: 20em;
+            width: 20em;
             object-fit: cover;
             border-radius: 35%;
+            float: right;
         }
 
     section#aboutUs div#aboutUsText {
@@ -284,6 +286,7 @@ div#aboutUsText p {
     font-family: 'Open Sans', sans-serif;
     color: #828A8F;
     font-size: 1em;
+    padding: 0 5em 0 0;
 }
 
 section#whyChooseUs {
